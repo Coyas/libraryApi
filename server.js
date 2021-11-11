@@ -8,10 +8,10 @@ require("dotenv").config();
 const app = express();
 app.use(cors());
 
-console.log(process.env.DB_HOST);
-console.log(process.env.DB_PASS);
-console.log(process.env.DB_USER);
-console.log(process.env.API_PORT);
+// console.log(process.env.DB_HOST);
+// console.log(process.env.DB_PASS);
+// console.log(process.env.DB_USER);
+// console.log(process.env.API_PORT);
 // connect to mongoDB 'Atlas'
 // process.env.DB_HOST;
 const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@terramdbtest.l0lm7.mongodb.net/${process.env.DB_HOST}?retryWrites=true&w=majority`;
